@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SemaforoComponent } from './semaforo/semaforo.component';
 import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SemaforoComponent,
-    BuclesComponent
+    BuclesComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,

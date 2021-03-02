@@ -1,5 +1,7 @@
-<ul>
-    <li *ngFor="let persona of personas">
-        {{persona.nombre}} - edad: {{persona.edad}} años
-    </li>
-</ul>
+<div class="personas">
+    <div class="persona" *ngFor="let persona of personas">
+        <h3>{{persona.nombre}} {{persona.apellido}}</h3>
+        <p>{{persona.calle}}</p>
+        <p>{{persona.telefono}}</p>
+    </div>
+</div>
