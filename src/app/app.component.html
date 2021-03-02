@@ -1,5 +1,16 @@
+<!-- <p *ngIf="mostrar ; else mainBlock">Contenido del párrafo</p>
 
-<p *ngIf="mostrar">Contenido del párrafo</p>
+<ng-template #mainBlock>
+  <p>contenido del primer parrafo</p>
+</ng-template>
+
+
+<ng-template #secondaryBlock>
+  <p>contenido del segundo párrafo</p>
+</ng-template>
+
+
+
 <button (click)="ocultarParrafo()">{{textoBoton}}</button>
 
 
@@ -27,6 +38,8 @@
   <input type="text" [(ngModel)]="colorStyle.color">
 </div>
 
-<div>
+<div>x
   <input type="range" min="12" max="50" step="2" (change)="onChange($event)">
-</div>
+</div> -->
+
+<app-bucles></app-bucles>
