@@ -1,3 +1,5 @@
+<app-semaforo></app-semaforo>
+
 <p [ngStyle]="colorStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, distinctio. </p>
 <button (click)="cambiarColor('o')">Naranja</button>
 <button (click)="cambiarColor('r')">rojo</button>
@@ -5,4 +7,8 @@
 
 <div>
   <input type="text" [(ngModel)]="colorStyle.color">
+</div>
+
+<div>
+  <input type="range" min="12" max="50" step="2" (change)="onChange($event)">
 </div>

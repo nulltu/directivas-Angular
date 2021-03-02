@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(){
     this.colorStyle = {
       color: 'red',
-      fontSize: '24px'
+      fontSize: '20px'
     }
   }
 
@@ -29,6 +29,10 @@ export class AppComponent {
       this.colorStyle.color='blue';
       break;
    }
+  }
+
+  onChange($event:any){
+    this.colorStyle.fontSize = `${$event.target.value}px`;
   }
 
 }
