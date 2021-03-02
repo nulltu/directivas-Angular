@@ -9,12 +9,28 @@ export class AppComponent {
   title = 'directivas';
 
   colorStyle:any;
+  mostrar:boolean;
+  textoBoton:string;
 
   constructor(){
+
+    this.mostrar = true;
+    this.textoBoton ="ocultar texto";
+
+
     this.colorStyle = {
       color: 'red',
       fontSize: '20px'
     }
+  }
+
+  ocultarParrafo(){
+      this.mostrar = !this.mostrar;
+      if(this.mostrar){
+        this.textoBoton = "ocultar texto"
+      }else{ 
+        this.textoBoton = "mostrar texto"
+      }
   }
 
   cambiarColor(pColor:string) {

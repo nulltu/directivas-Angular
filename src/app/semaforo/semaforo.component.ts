@@ -11,10 +11,11 @@ export class SemaforoComponent implements OnInit {
 
   constructor() { 
     this.arrayDeClases = ['semaforo'];
-    this.arrayDeClases.push('redondo');
+    
   }
 
   ngOnInit(): void {
+    
   }
 
 }
